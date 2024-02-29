@@ -5,7 +5,7 @@ import AboutImg from '../public/assets/about.jpg';
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+    <div id='about' className='w-full md:h-screen p-2 flex items-center py-24'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
@@ -30,7 +30,7 @@ const About = () => {
             time I run Code Commerce, a Youtube channel where I teach web
             developement and various front-end technologies.
           </p>
-          <Link href='/#projects'>
+          <Link href='/projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
               Check out some of my latest projects.
             </p>

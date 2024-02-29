@@ -2,7 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn,FaInstagram } from 'react-icons/fa';
+import { TypeAnimation } from 'react-type-animation';
 
 const Main = () => {
   return (
@@ -13,40 +14,62 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I&#39;m <span className='text-[#5651e5]'> Clint</span>
+            Hi, I&#39;m <span className='text-[#5651e5]'>Yash Pal</span>
           </h1>
-          <h1 className='py-2 text-gray-700'>A Front-End Web Developer</h1>
-          <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
+          <h1 className='py-2 text-gray-700'>
+          <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            'A Full Stack Developer',
+            1000, 
+            'UI/UX Designer',
+            1000,
+            'Android Developer',
+            1000,
+            'Youtuber',
+            1000
+          ]}
+          wrapper="span"
+          speed={10}
+          repeat={Infinity}
+          />
+          </h1>
+          <p className='py-8 text-gray-600 sm:max-w-[70%] m-auto'>
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+            <Link
+              href='https://www.linkedin.com/in/yash-pal-327362244/'
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaLinkedinIn />
               </div>
-            </a>
-            <a
-              href='https://github.com/fireclint'
+            </Link>
+            <Link
+              href='https://github.com/Yashya14'
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaGithub />
               </div>
-            </a>
-            <Link href='/#contact'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+            </Link>
+            <Link href='/contact'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href='/resume'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
+              </div>
+            </Link>
+            <Link href='https://www.instagram.com/yash.14.02/'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <FaInstagram />
               </div>
             </Link>
           </div>

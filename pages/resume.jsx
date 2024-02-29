@@ -6,7 +6,7 @@ const resume = () => {
   return (
     <>
       <Head>
-        <title>Clint | Resume</title>
+        <title>Yash Pal| Resume</title>
         <meta
           name='description'
           content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
@@ -17,17 +17,17 @@ const resume = () => {
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
         <h2 className='text-center'>Resume</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
+          <h2 className='text-center'>Yash Pal</h2>
           <div className='flex'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/yash-pal-327362244/'
               target='_blank'
               rel='noreferrer'
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/Yashya14'
               target='_blank'
               rel='noreferrer'
             >
@@ -85,11 +85,11 @@ const resume = () => {
           </p>
         </div>
 
-        <h5 className='text-center underline text-[18px] py-4'>
+        {/*<h5 className='text-center underline text-[18px] py-4'>
           Professional Experience
         </h5>
         {/* Experience */}
-        <div className='py-6'>
+       {/*} <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
             INFINITE TECH
@@ -115,11 +115,11 @@ const resume = () => {
               ensuring a smooth migration process.
             </li>
           </ul>
-        </div>
+  </div> */}
 
 
         {/* Personal Experience */}
-        <div className='py-6'>
+        {/*<div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
               Teaching & Mentoring Web Development
@@ -142,12 +142,12 @@ const resume = () => {
         </div>
 
         {/*  */}
-        <h5 className='text-center underline text-[18px] py-4'>
+       {/*} <h5 className='text-center underline text-[18px] py-4'>
           Other Professional Experience
-        </h5>
+</h5>*/}
       
         {/* Experience */}
-        <div className='py-6'>
+        {/*<div className='py-6'>
           <p className='italic'>
             <span className='font-bold'>CITY OF SHERMAN, TX</span>
             <span className='px-2'>|</span>Sherman, TX
@@ -181,8 +181,8 @@ const resume = () => {
               Support, among others.
             </li>
           </ul>
+        </div>*/}
         </div>
-      </div>
     </>
   );
 };

@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
-import NavLogo from '../public/assets/navLogo.png'
+import { useRouter } from 'next/router';
+import NavLogo from '../public/assets/yashnav.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,22 +13,22 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  useEffect(() => {
+    if (
+      router.asPath === '/property' ||
+      router.asPath === '/crypto' ||
+      router.asPath === '/netflix' ||
+      router.asPath === '/twitch'
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -68,23 +68,23 @@ const Navbar = () => {
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
+              <Link href='/about'>About</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
+              <Link href='/skills'>Skills</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
+              <Link href='/projects'>Projects</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
               <Link href='/resume'>Resume</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'>Contact</Link>
+            <li className='ml-10 text-sm uppercase hover:border-b border-[#5651e5] hover:text-[#5651e5]'>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -145,17 +145,17 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href='/#about'>
+              <Link href='/about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Skills
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
                 </li>
@@ -165,19 +165,19 @@ const Navbar = () => {
                   Resume
                 </li>
               </Link>
-              <Link href='/#contact'>
+              <Link href='/contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
                 </li>
               </Link>
             </ul>
-            <div className='pt-40'>
+            <div className='pt-[20px]'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
                 Let&#39;s Connect
               </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+              <div className='flex items-center justify-between my-4 w-full sm:w-[80%] gap-1'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/yash-pal-327362244/'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -186,7 +186,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/Yashya14'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -194,7 +194,7 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/#contact'>
+                <Link href='/contact'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
@@ -208,6 +208,14 @@ const Navbar = () => {
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
                     <BsFillPersonLinesFill />
+                  </div>
+                </Link>
+                <Link href='https://www.instagram.com/yash.14.02/'>
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                  >
+                    <FaInstagram />
                   </div>
                 </Link>
               </div>

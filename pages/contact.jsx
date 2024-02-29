@@ -10,7 +10,7 @@ import ContactImg from '../public/assets/contact.jpg';
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
+      <div className='max-w-[1240px] m-auto px-2 py-24 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
         </p>
@@ -27,8 +27,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className='py-2'>Yash Pal</h2>
+                <p>Full Stack Web Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
@@ -38,7 +38,7 @@ const Contact = () => {
                 <p className='uppercase pt-8'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
-                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                    href='https://www.linkedin.com/in/yash-pal-327362244/'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -47,7 +47,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href='https://github.com/fireclint'
+                    href='https://github.com/Yashya14'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -75,7 +75,7 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
-                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
+                action='#'
                 method='POST'
                 encType='multipart/form-data'
               >
@@ -148,3 +148,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
